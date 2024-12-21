@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echeveria Christmas Gift</title>
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f0f4f8;
+        color: #2d3748;
+        line-height: 1.8;
+      }
+
+      header {
+        text-align: center;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+        padding: 3rem 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+      }
+
+      header h1 {
+        font-size: 2.8rem;
+        margin: 0;
+        animation: float 6s ease-in-out infinite;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem;
+        animation: fadeIn 1s ease-out;
+      }
+
+      .title {
+        font-size: 2.2rem;
+        color: #5a67d8;
+        margin: 2rem 0;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      .image {
+        width: 100%;
+        max-width: 350px;
+        margin: 3rem auto;
+        perspective: 1000px;
+      }
+
+      .image img {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease;
+        transform-style: preserve-3d;
+      }
+
+      .image:hover img {
+        transform: rotateY(5deg) rotateX(5deg);
+      }
+
+      .content {
+        background: white;
+        border-radius: 20px;
+        padding: 3rem;
+        margin-top: 2rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+      }
+
+      .content h2 {
+        font-size: 1.8rem;
+        color: #4a5568;
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        display: inline-block;
+      }
+
+      .content h2::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        transition: width 0.3s ease;
+      }
+
+      .content h2:hover::after {
+        width: 100%;
+      }
+
+      .content ul {
+        padding-left: 0;
+        list-style: none;
+      }
+
+      .content ul li {
+        margin: 1.2rem 0;
+        padding-left: 2rem;
+        position: relative;
+        transition: all 0.3s ease;
+        animation: slideIn 0.5s ease-out;
+        animation-fill-mode: both;
+      }
+
+      .content ul li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #667eea;
+        font-size: 1.5rem;
+        line-height: 1;
+      }
+
+      .content ul li:hover {
+        transform: translateX(10px);
+        color: #4a5568;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 4rem;
+        padding: 2rem;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 1.2rem;
+        animation: float 5s ease-in-out infinite;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 2rem 1rem;
+        }
+
+        header h1 {
+          font-size: 2rem;
+        }
+
+        .title {
+          font-size: 1.8rem;
+        }
+
+        .content {
+          padding: 2rem;
+        }
+
+        .container {
+          padding: 1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header h1 {
+          font-size: 1.6rem;
+        }
+
+        .title {
+          font-size: 1.4rem;
+        }
+
+        .content {
+          padding: 1.5rem;
+        }
+
+        .content h2 {
+          font-size: 1.4rem;
+        }
+
+        .content ul li {
+          padding-left: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>✨ Merry Christmas ✨</h1>
+    </header>
+
+    <div class="container">
+      <div class="title">Echeveria Jade Point</div>
+
+      <div class="image">
+        <img src="./Echeveria-Jade-Point.jpg" alt="Echeveria Jade Point" />
+      </div>
+
+      <div class="content">
+        <h2>About Echeveria Jade Point</h2>
+        <p>
+          Echeveria 'Jade Point' is a stunning succulent that captivates with
+          its compact, rosette-forming foliage and elegant charm. Its vibrant
+          green leaves, often tinged with soft pink or red edges when exposed to
+          sunlight, exude a natural sophistication that makes it a favorite
+          among succulent enthusiasts. The leaves are smooth and fleshy,
+          spiraling gracefully to create a symmetrical rosette that can grow up
+          to 6 inches in diameter.
+        </p>
+
+        <h2>Care Tips</h2>
+        <ul>
+          <li>Place in bright, indirect sunlight for 4-6 hours a day</li>
+          <li>Water only when the soil is completely dry</li>
+          <li>Use well-draining soil to prevent root rot</li>
+          <li>
+            Avoid frost exposure; keep it in temperatures above 15°C (60°F)
+          </li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <ul>
+          <li>Enhances indoor aesthetics with its vibrant colors</li>
+          <li>Improves air quality by releasing oxygen at night</li>
+          <li>
+            Thrives in harsh conditions, symbolizing strength, endurance,
+            growth, and resilience!
+          </li>
+          <li>Its calming appearance promotes relaxation</li>
+          <li>
+            Adds natural elegance to any space and helps balance indoor humidity
+            levels
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Wishing you a joyful holiday season filled with love and greenery! 🌿
+      </p>
+    </footer>
+  </body>
+</html>
